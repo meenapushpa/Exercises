@@ -19,39 +19,39 @@ class ExerciseTestCases(unittest.TestCase):
         self.assertCountEqual(result, expected_output)
     
     def test_exercise1_b(self):
-        result=exercise1_b("C:\Projects\work21\Python Developer Test (1)\Python Developer Test\Python Developer Test Dataset.csv")
+        result=exercise1_b("Python Developer Test Dataset.csv")
         lengthval=len(result)
         self.assertEqual(lengthval, 5)
         
     def test_exercise2_a(self):
-        result=exercise2_a("C:\Projects\work21\Python Developer Test (1)\Python Developer Test\Python Developer Test Dataset.csv")
+        result=exercise2_a("Python Developer Test Dataset.csv")
         for i in result:
             resultdict=i['LeaseYears']
             self.assertEqual(resultdict, 25)
             
     def test_exercise2_b(self):
-        result=exercise2_b("C:\Projects\work21\Python Developer Test (1)\Python Developer Test\Python Developer Test Dataset.csv")
+        result=exercise2_b("Python Developer Test Dataset.csv")
         self.assertEqual(result, 46500.0)
         
     def test_exercise3(self):
-        result=exercise3("C:\Projects\work21\Python Developer Test (1)\Python Developer Test\Python Developer Test Dataset.csv")
+        result=exercise3("Python Developer Test Dataset.csv")
         lengthval=len(result.keys())
         self.assertEqual(lengthval,15)
         
     def test_exercise3_a(self):
-        result=exercise3("C:\Projects\work21\Python Developer Test (1)\Python Developer Test\Python Developer Test Dataset.csv")
+        result=exercise3("Python Developer Test Dataset.csv")
         valuedict=result['Cornerstone Telecommunications Infrastructure']
         self.assertEqual(valuedict,16)
         
     def test_exercise4(self):
         count=0
-        result=exercise4("C:\Projects\work21\Python Developer Test (1)\Python Developer Test\Python Developer Test Dataset.csv")
+        result=exercise4("Python Developer Test Dataset.csv")
         for i in result:
             if datetime.datetime.strptime(i,'%d/%B/%Y') < datetime.datetime.strptime('1/June/1999', '%d/%B/%Y'):
                 count+=1
         self.assertEqual(count,0)
         
     def test_exercise4_a(self):
-        result=exercise4("C:\Projects\work21\Python Developer Test (1)\Python Developer Test\Python Developer Test Dataset.csv")
+        result=exercise4("Python Developer Test Dataset.csv")
         lengthval=len(result)
         self.assertEqual(lengthval,5)
