@@ -4,6 +4,7 @@ from Exercise_Solution import *
 
 class ExerciseTestCases(unittest.TestCase):
    
+    # Test the exercise 1 with exact output   
     def test_exercise1_a(self):
         expected_output=[{'PropertyName': 'Potternewton Crescent', 'PropertyAddress1': 'Potternewton Est Playing Field', 'PropertyAddress2': '', 'PropertyAddress3': '', 'PropertyAddress4': 'LS7', 'UnitName': 'Potternewton Est Playing Field', 'TenantName': 'Arqiva Ltd', 'StartDate': '24-Jun-99', 'EndDate': '23-Jun-19', 'LeaseYears': 20, 'CurrentRent': 6600.0}, {'PropertyName': 'Queenswood Heights', 'PropertyAddress1': 'Queenswood Heights', 'PropertyAddress2': 'Queenswood Gardens', 'PropertyAddress3': 'Headingley', 'PropertyAddress4': 'Leeds', 'UnitName': 'Queenswood Hgt-Telecom App.', 'TenantName': 'Vodafone Ltd', 'StartDate': '08-Nov-04', 'EndDate': '07-Nov-29', 'LeaseYears': 25, 'CurrentRent': 9500.0}, {'PropertyName': 'Armley - Burnsall Grange', 'PropertyAddress1': 'Armley', 'PropertyAddress2': 'LS13', 'PropertyAddress3': '', 'PropertyAddress4': '', 'UnitName': 'Burnsall Grange CSR 37865', 'TenantName': 'O2 (UK) Ltd', 'StartDate': '26-Jul-07', 'EndDate': '25-Jul-32', 'LeaseYears': 25, 'CurrentRent': 12000.0}, {'PropertyName': 'Seacroft Gate (Chase) - Block 2', 'PropertyAddress1': 'Telecomms Apparatus', 'PropertyAddress2': 'Leeds', 'PropertyAddress3': '', 'PropertyAddress4': 'LS14', 'UnitName': 'Seacroft Gate (Chase) block 2-Telecom App.', 'TenantName': 'Vodafone Ltd.', 'StartDate': '30-Jan-04', 'EndDate': '29-Jan-29', 'LeaseYears': 25, 'CurrentRent': 12250.0}, {'PropertyName': 'Seacroft Gate (Chase) - Block 2', 'PropertyAddress1': 'Telecomms Apparatus', 'PropertyAddress2': 'Leeds', 'PropertyAddress3': '', 'PropertyAddress4': 'LS14', 'UnitName': 'Seacroft Gate (Chase) - Block 2, WYK 0414', 'TenantName': 'Hutchinson3G Uk Ltd&Everything Everywhere Ltd', 'StartDate': '21-Aug-07', 'EndDate': '20-Aug-32', 'LeaseYears': 25, 'CurrentRent': 12750.0}, {'PropertyName': 'Cottingley Towers', 'PropertyAddress1': 'Leeds', 'PropertyAddress2': '', 'PropertyAddress3': '', 'PropertyAddress4': 'LS11', 'UnitName': 'Cottingley Towers-WYK0052', 'TenantName': 'Everything Everywhere Ltd', 'StartDate': '28-Jan-08', 'EndDate': '27-Jan-18', 'LeaseYears': 10, 'CurrentRent': 12750.0}, {'PropertyName': 'Potternewton Heights - Tel App', 'PropertyAddress1': 'Potternewton Heights', 'PropertyAddress2': 'Potternewton Lne', 'PropertyAddress3': 'Leeds', 'PropertyAddress4': '', 'UnitName': 'Potternewton Heights', 'TenantName': 'Everything Everywhere Ltd', 'StartDate': '04-Mar-08', 'EndDate': '03-Mar-18', 'LeaseYears': 10, 'CurrentRent': 12750.0}, {'PropertyName': 'Gipton Gate West', 'PropertyAddress1': 'Leeds', 'PropertyAddress2': '', 'PropertyAddress3': '', 'PropertyAddress4': 'LS9', 'UnitName': 'Gipton Gate West-WYK0021', 'TenantName': 'Everything Everywhere Ltd & Hutchinson 3G UK', 'StartDate': '01-Apr-08', 'EndDate': '31-Mar-18', 'LeaseYears': 10, 'CurrentRent': 12750.0}, {'PropertyName': 'Theaker Lane', 'PropertyAddress1': 'Burnsall Grange', 'PropertyAddress2': 'Leeds', 'PropertyAddress3': '', 'PropertyAddress4': 'LS12', 'UnitName': 'Burnsall Grange - WYK0144', 'TenantName': 'Everything Everywhere Ltd', 'StartDate': '29-Apr-08', 'EndDate': '28-Apr-18', 'LeaseYears': 10, 'CurrentRent': 12750.0}, {'PropertyName': 'Gledhow Towers - Telecom App', 'PropertyAddress1': 'Brackenwood Drive', 'PropertyAddress2': 'Leeds', 'PropertyAddress3': '', 'PropertyAddress4': '', 'UnitName': 'Gledhow Towers - WYK0188', 'TenantName': 'Everything Everywhere Ltd & Hutchinson 3G UK', 'StartDate': '20-May-08', 'EndDate': '19-May-18', 'LeaseYears': 10, 'CurrentRent': 12750.0}, {'PropertyName': 'Lovell Park Heights', 'PropertyAddress1': 'Yeb', 'PropertyAddress2': '', 'PropertyAddress3': '', 'PropertyAddress4': 'LS7', 'UnitName': 'Lovell Park Heights-- WYK0207', 'TenantName': 'Everything Everywhere Ltd', 'StartDate': '17-Jun-08', 'EndDate': '16-Jun-18', 'LeaseYears': 10, 'CurrentRent': 12750.0}, {'PropertyName': 'Shakespeare Towers', 'PropertyAddress1': '', 'PropertyAddress2': '', 'PropertyAddress3': '', 'PropertyAddress4': 'LS9', 'UnitName': 'Shakespeare Towers ref 1704255985', 'TenantName': 'EverythingEverywhere Ltd & Hutchinson3GUK Ltd', 'StartDate': '10-Jun-09', 'EndDate': '09-Jun-19', 'LeaseYears': 10, 'CurrentRent': 12750.0}, {'PropertyName': 'Meynell Heights', 'PropertyAddress1': '', 'PropertyAddress2': '', 'PropertyAddress3': '', 'PropertyAddress4': 'LS11', 'UnitName': 'Meynell Heights- Wyk0184', 'TenantName': 'Everything Everywhere Ltd & Hutchinson 3G UK', 'StartDate': '03-Aug-09', 'EndDate': '02-Aug-19', 'LeaseYears': 10, 'CurrentRent': 12750.0}, {'PropertyName': 'Larkhill Road', 'PropertyAddress1': 'Lidgett Towers', 'PropertyAddress2': 'Larkhill Road', 'PropertyAddress3': 'Leeds', 'PropertyAddress4': '', 'UnitName': 'Lidgett Towers - Site ref 27874', 'TenantName': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'StartDate': '05-Jul-10', 'EndDate': '04-Jul-20', 'LeaseYears': 10, 
                         'CurrentRent': 13000.0}, {'PropertyName': 'Grayson Heights', 'PropertyAddress1': 'Eden Mount', 'PropertyAddress2': 'Burley Park', 'PropertyAddress3': 'Leeds', 'PropertyAddress4': 'LS5', 'UnitName': 'Grayson Heights LDS175   LS0029', 'TenantName': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'StartDate': '01-Aug-09', 'EndDate': '31-Jul-19', 'LeaseYears': 10, 'CurrentRent': 14730.08}, {'PropertyName': 'The Heights East', 'PropertyAddress1': 'Gamble Hill', 'PropertyAddress2': 'Bramley', 'PropertyAddress3': 'Leeds 12', 'PropertyAddress4': '', 'UnitName': 'The Heights East LDS045   55032', 'TenantName': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'StartDate': '01-Aug-09', 
@@ -17,32 +18,38 @@ class ExerciseTestCases(unittest.TestCase):
                         'PropertyAddress1': 'Seacroft', 'PropertyAddress2': '', 'PropertyAddress3': '', 'PropertyAddress4': 'LS14', 'UnitName': 'Queens View LDS232   LS0098', 'TenantName': 'Everything Everywhere Ltd&Hutchison 3G UK Ltd', 'StartDate': '01-Aug-09', 'EndDate': '31-Jul-19', 'LeaseYears': 10, 'CurrentRent': 28327.09}]
         result=exercise1_a("C:\Projects\work21\Python Developer Test (1)\Python Developer Test\Python Developer Test Dataset.csv")
         self.assertCountEqual(result, expected_output)
-    
+         
+    # Test the exercise1_b with length of result as 5
     def test_exercise1_b(self):
         result=exercise1_b("Python Developer Test Dataset.csv")
         lengthval=len(result)
         self.assertEqual(lengthval, 5)
-        
+      
+    #Test the exercise2_a with result dict have all keys as lease_years as 25
     def test_exercise2_a(self):
         result=exercise2_a("Python Developer Test Dataset.csv")
         for i in result:
             resultdict=i['LeaseYears']
             self.assertEqual(resultdict, 25)
             
+    #Test the exercise2_b with total rent value     
     def test_exercise2_b(self):
         result=exercise2_b("Python Developer Test Dataset.csv")
         self.assertEqual(result, 46500.0)
-        
+         
+    #Test the exercise3 with length of keys as 15 
     def test_exercise3(self):
         result=exercise3("Python Developer Test Dataset.csv")
         lengthval=len(result.keys())
         self.assertEqual(lengthval,15)
-        
+      
+   #Added testcase for same exercise3 as some key in dict correct count value as 16
     def test_exercise3_a(self):
         result=exercise3("Python Developer Test Dataset.csv")
         valuedict=result['Cornerstone Telecommunications Infrastructure']
         self.assertEqual(valuedict,16)
-        
+      
+   #Test the exercise4 with length of startdate having same count as 0
     def test_exercise4(self):
         count=0
         result=exercise4("Python Developer Test Dataset.csv")
@@ -50,7 +57,8 @@ class ExerciseTestCases(unittest.TestCase):
             if datetime.datetime.strptime(i,'%d/%B/%Y') < datetime.datetime.strptime('1/June/1999', '%d/%B/%Y'):
                 count+=1
         self.assertEqual(count,0)
-        
+    
+   #Added testcase for same exercise4 as length of the result is 5
     def test_exercise4_a(self):
         result=exercise4("Python Developer Test Dataset.csv")
         lengthval=len(result)
